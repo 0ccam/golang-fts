@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Поиск по архиву</title>
+	</head>
+	<body>
+		<h1>{{ .Header }}</h1>
+        <ul>
+            {{range .Records}}
+                <li>
+                    <div><b>{{ .Id }}</b>: {{ .Text }}</div>
+                </li>
+            {{end}}
+        </ul>
+	</body>
+</html>
